@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cabañas-Sierrahuacha</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/sierrahuacha.css"/>
+  </head>
+  <body>
+    <header id="header" class="header contenedor"> <!-- header -->
+      <figure class="logotipo"> <!--logotipo -->
+        <img src="images\logo1.jpg" width="157" height="101" alt="sierrahuacha logotipo"/>
+      </figure>
+      <nav class="menu"><!-- menu -->
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="ubicacion.html">Ubicacion</a>
+          </li>
+          <li>
+            <a href="reserva.html">Reserva</a>
+          </li>
+          <li>
+            <a href="fotos.html">Fotos</a>
+          </li>
+          <li>
+            <a href="actividades.html">Actividades</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+      <section id="portada2" class="portada2 "> <!-- portada -->
+        <div class="contenedor">
+
+          <h1 class="titulo2">Reserva</h1><!-- titulo -->
+          <h3 class="title-a21">rellene el siguiente formulario</h3><!-- resumen -->
+          <h3 class="title-a22">para que su reserva sea recibida</h3>
+          <h3 class="title-a23">y nos pongamos en contacto con usted</h3>
+          <h3 class="title-a24">mediante el correo electronico.</h3>
+        </div>
+        <section id="reserva2" class="reserva contenedor">
+            <form class="formularioreserva"><!-- formulario de reserva -->
+              <div class="col3"> <!-- primera columna -->
+                <label for="nombre">Nombre</label>
+                <input type="text" required id="nombre" name="nombre" />
+
+                <label for="n.documento">N° de Documento</label>
+                <input type="text" required id="n.documento" name="n.documento"/>
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" required id="telefono" name="telefono"/>
+
+                <label for="pasajeros">N° de pasajeros</label>
+                <input type="number" required id="pasajeros" name="pasajeros"/>
+
+                <label for="ingreso">Fecha de ingreso</label>
+                <input type="date" required id="ingreso" name="ingreso"/>
+
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+                <input type="submit" value="Enviar" class="buttonreserva" />
+              </div>
+              <div class="col4"> <!-- segunda columna -->
+                <label for="apellido">Apellido</label>
+                <input type="text" required id="apellido" name="apellido"/>
+
+                <label for="email">E-mail</label>
+                <input type="email" required id="email" name="email"/>
+
+                <label for="celular">Celular</label>
+                <input type="tel" required id="celular" name="celular"/>
+
+                <label for="niños">N° de niños</label>
+                <input type="number" required id="niños" name="niños"/>
+
+                <label for="salida">Fecha de salida</label>
+                <input type="date" required id="salida" name="salida"/>
+              </div>
+            </form>
+          </section>
+      </section>
+    <footer class="footer">
+
+        <div class="contenedor">
+          <div class="contacto">
+            <img src="images/icono2.png" alt="logotipo footer"/>
+            <a href="tel:+56974205793"><strong>Telefono</strong> <span>974205793</span></a>
+            <a href="mailto:sierrahuacha@gmail.com"><strong>Email</strong> <span>sierrahuacha@gmail.com</span></a>
+          </div>
+          <form class="formularioft">
+            <div class="col1">
+              <label for="nombre">Nombre</label>
+              <input type="text" required id="nombre" name="nombre" />
+              <label for="email">E-mail</label>
+              <input type="email" required id="email" name="email"/>
+            </div>
+            <div class="col2">
+              <label for="comentarios">Comentarios</label>
+              <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+              <input type="submit" value="Enviar" class="buttoncontacto" />
+            </div>
+          </form>
+        </div>
+    </footer>
+  </body>
+  </html>
