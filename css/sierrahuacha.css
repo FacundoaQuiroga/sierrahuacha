@@ -224,7 +224,7 @@ color: #13483b;
 }
 /* <---FOTOS-----------> */
 .portada3{
-  background: url('../images/fondo-fotos-sierrahuacha2.jpg');
+  background: url('https://raw.githubusercontent.com/FacundoaQuiroga/sierrahuacha/master/images/fondo-fotos-edit.jpg');
   padding: 200px 150px;
   background-repeat: no-repeat;
   background-position: center top;
