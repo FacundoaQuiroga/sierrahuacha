@@ -159,8 +159,9 @@ color: #13483b;
   color: black;
 }
 .portada1{
-  background: url('../images/ubicacion-sierrahuacha.jpg');
-  padding: 200px;
+  background: url('https://raw.githubusercontent.com/FacundoaQuiroga/sierrahuacha/master/images/ubicacion-edit-portada2.jpg');
+  padding: 100px 150px 150px 230px;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
