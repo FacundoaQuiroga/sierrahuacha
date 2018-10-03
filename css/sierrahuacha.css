@@ -57,7 +57,7 @@ input:focus, textarea:focus {
   color: black;
 }
 .portada0 {
-  background: url('../images/cabaña.jpg');
+  background: url('https://raw.githubusercontent.com/FacundoaQuiroga/sierrahuacha/master/images/caba%C3%B1a-editada-portada.jpg');
   color: #f1f157;
   padding: 160px;
   background-repeat: no-repeat;
