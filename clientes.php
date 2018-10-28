@@ -1,3 +1,25 @@
+<?php
+	$conectar=@mysql_connect('localhost','root','');
+	if(!$conectar){
+		echo"No Se Pudo Conectar Con El Servidor";
+	}else{
+		$base=mysql_select_db('formulario-sierrahuacha');
+		if(!$base){
+			echo"No Se Encontro La Base De Datos";
+		}
+	}
+	$Nombre=$_POST['Nombre'];
+	$Email=$_POST['Email'];
+	$Comentarios=$_POST['Comentarios'];
+
+$sql="INSERT INTO clientes VALUES('$Nombre','$Email','$Comentarios')";
+$agregar=mysql_query($sql);
+	if(!$agregar){
+		echo"Hubo Algun Error";
+	}else{
+		echo"Datos Guardados Correctamente<br><a href='index.html'>Volver</a>";
+	}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -59,8 +81,9 @@
             <a href="mailto:sierrahuacha@gmail.com"><strong>Email</strong> <span>sierrahuacha@gmail.com</span></a>
           </div>
           <form class="formularioft">
+
             <div class="col1">
-                <form action="clientes.php" method="POST" > <!-- envio a php base de datos -->
+              <form action="clientes.php" method="POST" > <!-- envio a php base de datos -->
                   <label for="Nombre">Nombre</label>
                   <input type="text" required id="nombre" name="nombre" />
                   <label for="Email">E-mail</label>

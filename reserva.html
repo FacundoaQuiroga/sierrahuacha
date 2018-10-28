@@ -43,40 +43,42 @@
         <section id="reserva2" class="reserva contenedor">
             <form class="formularioreserva"><!-- formulario de reserva -->
               <div class="col3"> <!-- primera columna -->
-                <label for="nombre">Nombre</label>
-                <input type="text" required id="nombre" name="nombre" />
+                <form action="clientes.php" method="POST" > <!-- envio a php base de datos -->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" required id="nombre" name="nombre" />
 
-                <label for="n.documento">N° de Documento</label>
-                <input type="text" required id="n.documento" name="n.documento"/>
+                    <label for="n.documento">N° de Documento</label>
+                    <input type="text" required id="n.documento" name="n.documento"/>
 
-                <label for="telefono">Telefono</label>
-                <input type="tel" required id="telefono" name="telefono"/>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" required id="telefono" name="telefono"/>
 
-                <label for="pasajeros">N° de pasajeros</label>
-                <input type="number" required id="pasajeros" name="pasajeros"/>
+                    <label for="pasajeros">N° de pasajeros</label>
+                    <input type="number" required id="pasajeros" name="pasajeros"/>
 
-                <label for="ingreso">Fecha de ingreso</label>
-                <input type="date" required id="ingreso" name="ingreso"/>
+                    <label for="ingreso">Fecha de ingreso</label>
+                    <input type="date" required id="ingreso" name="ingreso"/>
 
-                <label for="comentarios">Comentarios</label>
-                <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
-                <input type="submit" value="Enviar" class="buttonreserva" />
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+                    <input type="submit" value="Enviar" class="buttonreserva" />
               </div>
               <div class="col4"> <!-- segunda columna -->
-                <label for="apellido">Apellido</label>
-                <input type="text" required id="apellido" name="apellido"/>
+                <form action="clientes.php" method="POST" > <!-- envio a php base de datos -->
+                    <label for="apellido">Apellido</label>
+                    <input type="text" required id="apellido" name="apellido"/>
 
-                <label for="email">E-mail</label>
-                <input type="email" required id="email" name="email"/>
+                    <label for="email">E-mail</label>
+                    <input type="email" required id="email" name="email"/>
 
-                <label for="celular">Celular</label>
-                <input type="tel" required id="celular" name="celular"/>
+                    <label for="celular">Celular</label>
+                    <input type="tel" required id="celular" name="celular"/>
 
-                <label for="niños">N° de niños</label>
-                <input type="number" required id="niños" name="niños"/>
+                    <label for="niños">N° de niños</label>
+                    <input type="number" required id="niños" name="niños"/>
 
-                <label for="salida">Fecha de salida</label>
-                <input type="date" required id="salida" name="salida"/>
+                    <label for="salida">Fecha de salida</label>
+                    <input type="date" required id="salida" name="salida"/>
               </div>
             </form>
           </section>
