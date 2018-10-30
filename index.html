@@ -59,19 +59,20 @@
             <a href="mailto:sierrahuacha@gmail.com"><strong>Email</strong> <span>sierrahuacha@gmail.com</span></a>
           </div>
           <form class="formularioft">
-            <div class="col1">
-                <form action="clientes.php" method="POST" > <!-- envio a php base de datos -->
-                  <label for="Nombre">Nombre</label>
-                  <input type="text" required id="nombre" name="nombre" />
-                  <label for="Email">E-mail</label>
-                  <input type="email" required id="email" name="email"/>
-            </div>
-            <div class="col2">
-              <form action="clientes.php" method="POST" > <!-- envio a php base de datos -->
-                  <label for="Comentarios">Comentarios</label>
-                  <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
-                  <input type="submit" value="Enviar" class="buttoncontacto" />
-            </div>
+            <form action="enviar.php" method="post" class="form_contact"> <!-- enviar.php -->
+              <div class="col1">
+
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" required id="nombre" name="nombre" />
+                    <label for="Email">E-mail</label>
+                    <input type="email" required id="email" name="email"/>
+              </div>
+              <div class="col2">
+                    <label for="Comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+                    <input type="submit" value="Enviar" class="buttoncontacto" />
+              </div>
+            </form>
           </form>
         </div>
     </footer>
