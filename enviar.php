@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $comentarios = $_POST['comentarios'];
 
 // Datos para el correo
-$destinatario = "psychedelia_2@outlook.com";
+$destinatario = "info@sierrahuacha.cl";
 $asunto = "contacto cabañas sierrahuacha";
 
 $carta = "De: $nombre \n";
